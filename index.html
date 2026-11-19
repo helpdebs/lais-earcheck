@@ -93,23 +93,29 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 .shape i.w{width:11px;height:11px;opacity:.45}
 .qnav{display:flex;gap:8px}
 
-/* lab */
-.lab{flex:1;display:grid;grid-template-rows:auto 1fr 1fr;gap:12px;min-height:0}
-.sentbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-.sentbar .lbl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin-right:4px}
-.sent{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:7px 12px;font-family:'Lora',serif;font-size:15px;cursor:pointer}
-.sent.cur{border-color:var(--accent);background:#fff;box-shadow:0 0 0 2px var(--accent-soft)}
-.track{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 18px;display:grid;grid-template-columns:200px 1fr;gap:18px;min-height:0}
-.track .tl{display:flex;flex-direction:column;gap:7px;justify-content:center}
-.track .tn{font-family:'Lora',serif;font-size:22px;font-weight:600}
-.track .tn small{display:block;font-family:'Poppins';font-size:11.5px;font-weight:400;color:var(--soft)}
-.track .tb{display:flex;gap:6px;flex-wrap:wrap}
-.track .tb .btn{padding:6px 12px;font-size:12px}
-.track .tb .btn.live{background:var(--accent);border-color:var(--accent);color:#fff}
-.track canvas{width:100%;height:100%;display:block;border-radius:10px;background:var(--bg)}
-.track.a .tn{color:var(--blue)}
-.track.b .tn{color:var(--accent)}
-.sentence-big{font-family:'Lora',serif;font-size:21px;line-height:1.4}
+/* link */
+.main .say{font-family:'Lora',serif;font-size:38px;font-weight:600;text-align:center;line-height:1.25}
+.main .hidden{font-family:'Lora',serif;font-size:30px;color:var(--soft);letter-spacing:.3em}
+.lk{display:inline-block;width:.62em;height:.32em;border:2.5px solid currentColor;border-top:none;border-radius:0 0 .5em .5em;margin:0 .04em;vertical-align:-.12em}
+.lk.c1{color:var(--accent)}.lk.c2{color:var(--blue)}.lk.c3{color:var(--ok)}.lk.c4{color:#9A6B1E}
+.link{flex:1;display:grid;grid-template-columns:330px 1fr;gap:16px;min-height:0}
+.rules{display:grid;grid-template-rows:repeat(4,1fr);gap:10px}
+.rc{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;display:flex;flex-direction:column;justify-content:center;gap:3px;border-left:5px solid}
+.rc.c1{border-left-color:var(--accent)}.rc.c2{border-left-color:var(--blue)}.rc.c3{border-left-color:var(--ok)}.rc.c4{border-left-color:#9A6B1E}
+.rc .rt{font-family:'Lora',serif;font-size:18px;font-weight:600}
+.rc p{font-size:13px;color:var(--soft)}
+.rc .ex{font-family:'Lora',serif;font-size:16.5px}
+.chain{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 24px;display:flex;flex-direction:column;min-height:0}
+.cpick{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.cpick button{border:1px solid var(--line);background:var(--bg);border-radius:99px;padding:6px 14px;font-size:12.5px;color:var(--ink)}
+.cpick button.cur{background:var(--accent);border-color:var(--accent);color:#fff}
+.lines{flex:1;display:flex;flex-direction:column;justify-content:flex-end;gap:6px;overflow:hidden}
+.ln{font-family:'Lora',serif;font-size:21px;line-height:1.35;color:var(--soft);text-align:right;opacity:.55}
+.ln.last{font-size:30px;color:var(--ink);opacity:1;font-weight:500}
+.cfoot{display:flex;gap:8px;align-items:center;margin-top:8px}
+.chain .sound{font-size:14px;color:var(--soft);margin-top:12px;padding-top:10px;border-top:1px solid var(--line);min-height:30px}
+.chain .sound b{font-family:'Lora',serif;font-size:19px;color:var(--ink);font-weight:500}
+.spacer{flex:1}
 
 /* impression */
 .imp{flex:1;display:grid;grid-template-columns:1fr 1.15fr;gap:18px;min-height:0}
@@ -132,7 +138,8 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
 
 /* results */
 .res{flex:1;display:grid;grid-template-columns:1.1fr 1fr;gap:18px}
-.scores{display:grid;grid-template-rows:repeat(3,1fr);gap:12px}
+.scores{display:grid;grid-template-rows:repeat(4,1fr);gap:10px}
+.sc .big{font-size:44px!important}
 .sc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 26px;display:flex;align-items:center;gap:24px}
 .sc .big{font-family:'Lora',serif;font-size:52px;font-weight:600;min-width:130px}
 .sc .big small{font-size:24px;color:var(--soft);font-weight:500}
@@ -155,7 +162,7 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
   <div class="kicker">One-to-one · 60 minutes</div>
   <h1>Ear <em>Check</em></h1>
   <p class="sub">Before we fix the voice, we train the ear.</p>
-  <div class="meta"><span class="chip">Count</span><span class="chip">Find the beat</span><span class="chip">Pick the English</span><span class="chip">Hear the music</span></div>
+  <div class="meta"><span class="chip">Count</span><span class="chip">Find the beat</span><span class="chip">Pick the English</span><span class="chip">Link it up</span></div>
 </section>
 
 <!-- 2 PLAN -->
@@ -165,8 +172,8 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
     <div class="pcard"><div class="n">1</div><h3>Count the beats</h3><p>How many syllables does a word really have?</p><div class="t">10 min</div></div>
     <div class="pcard"><div class="n">2</div><h3>Find the strong beat</h3><p>Which part of the word is the loudest?</p><div class="t">10 min</div></div>
     <div class="pcard"><div class="n">3</div><h3>Pick the English</h3><p>One word, two versions. Which one sounds English?</p><div class="t">10 min</div></div>
-    <div class="pcard"><div class="n">4</div><h3>Hear the music</h3><p>We take the words away and listen to the rhythm only.</p><div class="t">15 min</div></div>
-    <div class="pcard"><div class="n">5</div><h3>The impression</h3><p>Your best Brazilian-speaking-English. Then your score.</p><div class="t">15 min</div></div>
+    <div class="pcard"><div class="n">4</div><h3>Link it up</h3><p>Hear where words run together, then say them that way.</p><div class="t">15 min</div></div>
+    <div class="pcard"><div class="n">5</div><h3>The impression</h3><p>Your best Brazilian accent. Then your score.</p><div class="t">15 min</div></div>
   </div>
   <div class="rule"><b>Today's game:</b> every answer is right or wrong, and you get a score. Next week we play again and try to beat it.</div>
 </section>
@@ -192,21 +199,36 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
   <div class="quiz"></div>
 </section>
 
-<!-- 6 LAB -->
+<!-- 6 HEAR THE LINKS -->
+<section class="slide" data-quiz="links">
+  <div class="head"><div><div class="kicker">Step 4 · Hear the links</div><h1>How many <em>words?</em></h1></div>
+    <ol class="steps"><li>I say a sentence at natural speed, twice. The text stays hidden.</li><li>Count the words you hear. Linked words still count as separate words.</li><li>Tap your answer. Then we see the sentence and how it links.</li></ol></div>
+  <div class="quiz"></div>
+</section>
+
+<!-- 7 LINK IT UP -->
 <section class="slide">
-  <div class="head"><div><div class="kicker">Step 4 · Hear the music</div><h1>Take the words <em>away</em></h1></div>
-    <ol class="steps"><li>Record both versions of the sentence: a native model (A) and you (B).</li><li>Play both <b>muffled</b>. Which one sounds like English?</li><li>Look at the shapes. Count the tall peaks in A and in B.</li></ol></div>
-  <div class="lab">
-    <div class="sentbar" id="sentbar"><span class="lbl">Sentence</span></div>
-    <div class="track a" id="trackA"><div class="tl"><div class="tn">A · Model<small>Native speaker or teacher</small></div><div class="tb"></div></div><canvas></canvas></div>
-    <div class="track b" id="trackB"><div class="tl"><div class="tn">B · You<small>Your version</small></div><div class="tb"></div></div><canvas></canvas></div>
+  <div class="head"><div><div class="kicker">Step 4 · Link it up</div><h1>Build it from the <em>end</em></h1></div>
+    <ol class="steps"><li>Pick a sentence. Start with the last word only.</li><li>Tap <b>Add a piece</b>. I say the line, you say it twice.</li><li>Where you see a curve, join the words: no pause, no extra “i”.</li></ol></div>
+  <div class="link">
+    <div class="rules">
+      <div class="rc c1"><div class="rt"><i></i>Consonant + vowel</div><p>The consonant jumps to the next word.</p><div class="ex">picked<span class="lk c1"></span>up → pick-tup</div></div>
+      <div class="rc c2"><div class="rt"><i></i>Same sound twice</div><p>Say it once, a little longer.</p><div class="ex">had<span class="lk c2"></span>to → ha-tə</div></div>
+      <div class="rc c3"><div class="rt"><i></i>Vowel + vowel</div><p>Slide in a tiny w or y.</p><div class="ex">be<span class="lk c3"></span>a → bee-yə</div></div>
+      <div class="rc c4"><div class="rt"><i></i>t or d + you</div><p>It turns into ch or j.</p><div class="ex">did<span class="lk c4"></span>you → di-jə</div></div>
+    </div>
+    <div class="chain">
+      <div class="cpick" id="cpick"></div>
+      <div class="lines" id="lines"></div>
+      <div class="sound" id="sound"></div><div class="cfoot"><span class="spacer"></span><button class="btn" id="cBack">Remove a piece</button><button class="btn primary" id="cAdd">Add a piece</button></div>
+    </div>
   </div>
 </section>
 
 <!-- 7 IMPRESSION -->
 <section class="slide">
   <div class="head"><div><div class="kicker">Step 5 · The impression</div><h1>Your best <em>Brazilian</em> accent</h1></div>
-    <ol class="steps"><li>Read it with a really strong Brazilian accent.</li><li>Tick what you did in the impression.</li><li>Play last week's recording. Tick what you hear there.</li></ol></div>
+    <ol class="steps"><li>Read it with a really strong Brazilian accent.</li><li>Tick what you did in the impression.</li><li>Listen to your real recording. Tick what you hear there.</li></ol></div>
   <div class="imp">
     <div class="ibox">
       <div class="tag">Read it with a strong accent</div>
@@ -216,7 +238,7 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
     </div>
     <div class="ibox">
       <div class="checks" id="checks">
-        <div class="hd">What makes it sound Brazilian?</div><div class="hd">Impression</div><div class="hd">Last week</div>
+        <div class="hd">What makes it sound Brazilian?</div><div class="hd">Impression</div><div class="hd">Real voice</div>
       </div>
     </div>
   </div>
@@ -230,6 +252,7 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
       <div class="sc"><div class="big" id="r-count">0<small>/10</small></div><div><h3>Count the beats</h3><p>Hearing syllables, not spelling.</p></div></div>
       <div class="sc"><div class="big" id="r-stress">0<small>/10</small></div><div><h3>Find the strong beat</h3><p>Hearing where the word leans.</p></div></div>
       <div class="sc"><div class="big" id="r-pick">0<small>/10</small></div><div><h3>Pick the English</h3><p>Telling English from Brazilian.</p></div></div>
+      <div class="sc"><div class="big" id="r-links">0<small>/8</small></div><div><h3>Hear the links</h3><p>Hearing where words join.</p></div></div>
     </div>
     <div class="hw">
       <div class="tag">Your week · 10 minutes a day</div>
@@ -245,7 +268,7 @@ h1 em{font-style:italic;font-weight:500;color:var(--accent)}
   </div>
 </section>
 
-<div class="footer"><span id="count">1 / 8</span>
+<div class="footer"><span id="count">1 / 9</span>
   <div class="nav"><button id="reset" title="Clear all answers" style="width:auto;padding:0 14px;border-radius:99px;font-size:12px;margin-right:8px">Reset</button><button id="prev">&#8592;</button><button id="next">&#8594;</button></div></div>
 <div class="toast" id="toast"></div>
 </div></div>
@@ -280,6 +303,15 @@ const QUIZ={
   {w:'technician',s:['tech','ni','cian'],a:1,note:'tek-NISH-ən. The strong beat always falls right before -cian, -tion and -ic.'},
   {w:'audience',s:['au','di','ence'],a:0,note:'AW-dee-əns.'},
   {w:'event',s:['e','vent'],a:1,note:'i-VENT. And it ends on the t: no “even-tchi”.'}]},
+ links:{opts:[2,3,4,5,6,7],items:[
+  {w:'She picked up her bag.',a:5,lk:'She picked_c up_c her bag.',snd:'she pick-tu-per bag'},
+  {w:'It turned out to be fine.',a:6,lk:'It turned_c out_s to be fine.',snd:'it turn-dow-tə be fine'},
+  {w:'Something felt off.',a:3,lk:'Something felt_c off.',snd:'something fel-toff'},
+  {w:'Put it on the table.',a:5,lk:'Put_c it_c on the table.',snd:'pu-ti-ton the table'},
+  {w:'Did you get an email?',a:5,lk:'Did_y you get_c an_c email?',snd:'di-jə ge-tə-nee-mail'},
+  {w:'Not at all.',a:3,lk:'Not_c at_c all.',snd:'no-tə-tall'},
+  {w:'I asked her about it.',a:5,lk:'I asked_c her_c about_c it.',snd:'I ask-tə-rə-bou-tit'},
+  {w:'Go out and have a look.',a:6,lk:'Go_g out_c and have_c a look.',snd:'go-wou-tən ha-və look'}]},
  pick:{items:[
   {w:'available',a:2},{w:'checked',a:1},{w:'event',a:2},{w:'comfortable',a:1},{w:'specific',a:1},
   {w:'laptop',a:2},{w:'photographer',a:1},{w:'Wednesday',a:2},{w:'decided',a:2},{w:'colleague',a:1}]}
@@ -297,7 +329,7 @@ addEventListener('keydown',e=>{if(/INPUT|TEXTAREA/.test(document.activeElement.t
  if(e.key==='ArrowRight'||e.key==='PageDown'){e.preventDefault();go(cur+1)}
  if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(cur-1)}
  if(e.key==='f'||e.key==='F'){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen()}});
-document.getElementById('reset').onclick=()=>{if(!confirm('Clear all answers and ticks?'))return;['count','stress','pick'].forEach(k=>{store.set('ans-'+k,{});state[k].i=0;renderQuiz(k)});store.set('checks',{});renderChecks()};
+document.getElementById('reset').onclick=()=>{if(!confirm('Clear all answers and ticks?'))return;['count','stress','links','pick'].forEach(k=>{store.set('ans-'+k,{});state[k].i=0;renderQuiz(k)});store.set('checks',{});renderChecks()};
 
 /* ---------- quizzes ---------- */
 const state={};
@@ -306,11 +338,11 @@ function renderQuiz(k){
  const host=document.querySelector('[data-quiz="'+k+'"] .quiz');const q=QUIZ[k];const ans=store.get('ans-'+k,{});const st=state[k]=state[k]||{i:0};
  const it=q.items[st.i];const given=ans[st.i];const done=given!==undefined;
  let rail='<div class="rail">'+q.items.map((x,i)=>{const g=ans[i];const cls=g===undefined?'':(g===x.a?'right':'wrong');
-   return '<div class="ri '+cls+(i===st.i?' cur':'')+'" data-i="'+i+'"><span class="m">'+(g===undefined?'':(g===x.a?'&#10003;':'&times;'))+'</span>'+(k==='pick'?'Round '+(i+1):x.w)+'</div>'}).join('');
+   return '<div class="ri '+cls+(i===st.i?' cur':'')+'" data-i="'+i+'"><span class="m">'+(g===undefined?'':(g===x.a?'&#10003;':'&times;'))+'</span>'+(k==='pick'||k==='links'?(k==='pick'?'Round ':'Sentence ')+(i+1):x.w)+'</div>'}).join('');
  const score=q.items.reduce((n,x,i)=>n+(ans[i]===x.a?1:0),0);
  rail+='<div class="score"><span>Score</span><b>'+score+' / '+q.items.length+'</b></div></div>';
  let opts='';
- if(k==='count')opts=q.opts.map(o=>'<button class="opt'+cls(o)+'" data-v="'+o+'">'+o+'</button>').join('');
+ if(k==='count'||k==='links')opts=q.opts.map(o=>'<button class="opt'+cls(o)+'" data-v="'+o+'">'+o+'</button>').join('');
  if(k==='stress')opts=it.s.map((o,j)=>'<button class="opt syl'+cls(j)+'" data-v="'+j+'">'+o+'</button>').join('');
  if(k==='pick')opts=[1,2].map(o=>'<button class="opt big'+cls(o)+'" data-v="'+o+'">'+o+'<small>Version '+o+'</small></button>').join('');
  function cls(v){if(!done)return '';if(v===it.a)return ' ok';if(v===given)return ' no';return ''}
@@ -318,59 +350,40 @@ function renderQuiz(k){
  if(done){const right=given===it.a;
   if(k==='count')rev='<div class="ans">'+(right?'Yes! ':'')+'<b>'+it.a+'</b> '+(it.a===1?'beat':'beats')+shapeHTML(it.shape)+'</div><div class="note">'+it.note+'</div>';
   if(k==='stress')rev='<div class="ans">'+(right?'Yes! ':'')+it.s.map((x,j)=>j===it.a?'<b>'+x.toUpperCase()+'</b>':x).join('·')+'</div><div class="note">'+it.note+'</div>';
+  if(k==='links')rev='<div class="ans">'+(right?'Yes! ':'')+'<b>'+it.a+'</b> words</div><div class="note">Sounds like: '+it.snd+'</div>';
   if(k==='pick')rev='<div class="ans">'+(right?'Yes! ':'')+'Version <b>'+it.a+'</b> was the English one.</div><div class="note">'+(right?'Your ear caught it.':'Ask me to say both again, slowly. Listen for the strong beat and the ending.')+'</div>';}
- const prompt={count:'How many beats?',stress:'Tap the strongest part.',pick:'Which version sounded English?'}[k];
- host.innerHTML=rail+'<div class="main"><div class="round">'+(k==='pick'?'Round':'Word')+' '+(st.i+1)+' of '+q.items.length+'</div>'+
-  '<a class="btn yg" href="'+yg(it.w)+'" target="_blank" rel="noopener">'+ICON.ext+' Hear it on YouGlish</a>'+
-  '<div class="word">'+it.w+'</div><div class="prompt">'+prompt+'</div><div class="opts">'+opts+'</div><div class="reveal">'+rev+'</div>'+
-  '<div class="qnav"><button class="btn" data-mv="-1"'+(st.i===0?' disabled':'')+'>&#8592; Previous</button><button class="btn primary" data-mv="1"'+(st.i===q.items.length-1?' disabled':'')+'>Next word &#8594;</button></div></div>';
- if(k==='pick'&&!done)host.querySelector('.yg').style.display='none';
+ const prompt={count:'How many beats?',stress:'Tap the strongest part.',pick:'Which version sounded English?',links:'How many words did you hear?'}[k];
+ host.innerHTML=rail+'<div class="main"><div class="round">'+(k==='pick'?'Round':k==='links'?'Sentence':'Word')+' '+(st.i+1)+' of '+q.items.length+'</div>'+
+  '<a class="btn yg" href="'+yg(k==='links'?it.w.replace(/[.?!]/g,''):it.w)+'" target="_blank" rel="noopener">'+ICON.ext+' Hear it on YouGlish</a>'+
+  (k==='links'?(done?'<div class="say">'+lineHTML(parse(it.lk))+'</div>':'<div class="hidden">· · · · · ·</div>'):'<div class="word">'+it.w+'</div>')+'<div class="prompt">'+prompt+'</div><div class="opts">'+opts+'</div><div class="reveal">'+rev+'</div>'+
+  '<div class="qnav"><button class="btn" data-mv="-1"'+(st.i===0?' disabled':'')+'>&#8592; Previous</button><button class="btn primary" data-mv="1"'+(st.i===q.items.length-1?' disabled':'')+'>'+(k==='count'||k==='stress'?'Next word':'Next')+' &#8594;</button></div></div>';
+ if((k==='pick'||k==='links')&&!done)host.querySelector('.yg').style.display='none';
  host.querySelectorAll('.ri').forEach(r=>r.onclick=()=>{st.i=+r.dataset.i;renderQuiz(k)});
  host.querySelectorAll('[data-mv]').forEach(b=>b.onclick=()=>{st.i=Math.max(0,Math.min(q.items.length-1,st.i+ +b.dataset.mv));renderQuiz(k)});
  if(!done)host.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{ans[st.i]=+b.dataset.v;store.set('ans-'+k,ans);renderQuiz(k)});
 }
-['count','stress','pick'].forEach(renderQuiz);
 
-/* ---------- audio lab ---------- */
-let AC=null;function ac(){return AC=AC||new (window.AudioContext||window.webkitAudioContext)()}
-const tracks={A:{buf:null},B:{buf:null}};let curSent=0,stream=null,rec=null,recKey=null,srcNode=null;
-const bufs={};// key sent-track -> AudioBuffer
-function buildLab(){const sb=document.getElementById('sentbar');
- SENTS.forEach((s,i)=>{const b=document.createElement('div');b.className='sent'+(i===0?' cur':'');b.textContent=s;b.onclick=()=>{curSent=i;sb.querySelectorAll('.sent').forEach((x,j)=>x.classList.toggle('cur',j===i));drawAll()};sb.appendChild(b)});
- ['A','B'].forEach(t=>{const tb=document.querySelector('#track'+t+' .tb');
-  tb.innerHTML='<button class="btn rec">'+ICON.rec+' Record</button><button class="btn load">Load file</button><button class="btn pl">'+ICON.play+' Play</button><button class="btn mf">'+ICON.play+' Muffled</button><input type="file" accept="audio/*" hidden>';
-  tb.querySelector('.rec').onclick=()=>toggleRec(t);
-  const fi=tb.querySelector('input');tb.querySelector('.load').onclick=()=>fi.click();
-  fi.onchange=async()=>{const f=fi.files[0];if(!f)return;try{const ab=await f.arrayBuffer();bufs[curSent+t]=trim(await ac().decodeAudioData(ab));drawAll()}catch(e){toast('Could not read that file. Try an mp3, m4a or wav.')}fi.value=''};
-  tb.querySelector('.pl').onclick=()=>play(t,false);tb.querySelector('.mf').onclick=()=>play(t,true)});
- addEventListener('resize',drawAll);drawAll()}
-async function toggleRec(t){const btn=document.querySelector('#track'+t+' .rec');
- if(rec&&rec.state==='recording'){if(recKey!==t){toast('Stop the other recording first.');return}rec.stop();return}
- try{stream=stream||await navigator.mediaDevices.getUserMedia({audio:{echoCancellation:false,noiseSuppression:false,autoGainControl:true}})}catch(e){toast('Microphone not available. Allow it in the browser.');return}
- const chunks=[];rec=new MediaRecorder(stream);recKey=t;const key=curSent+t;
- rec.ondataavailable=e=>e.data.size&&chunks.push(e.data);
- rec.onstop=async()=>{btn.classList.remove('live');btn.innerHTML=ICON.rec+' Record';recKey=null;
-  try{const ab=await new Blob(chunks).arrayBuffer();bufs[key]=trim(await ac().decodeAudioData(ab));drawAll()}catch(e){toast('Recording failed. Try again.')}};
- rec.start();btn.classList.add('live');btn.innerHTML=ICON.stop+' Stop'}
-function trim(b){const d=b.getChannelData(0),sr=b.sampleRate,win=Math.floor(sr*0.02);let mx=0;for(let i=0;i<d.length;i++)mx=Math.max(mx,Math.abs(d[i]));const th=mx*0.06;
- let s=0,e=d.length;for(let i=0;i<d.length;i+=win){if(Math.abs(d[i])>th||rms(d,i,win)>th*0.5){s=Math.max(0,i-win*3);break}}
- for(let i=d.length-win;i>0;i-=win){if(rms(d,i,win)>th*0.5){e=Math.min(d.length,i+win*5);break}}
- if(e<=s)return b;const out=ac().createBuffer(1,e-s,sr);out.copyToChannel(d.slice(s,e),0);return out}
-function rms(d,i,n){let s=0;for(let j=i;j<i+n&&j<d.length;j++)s+=d[j]*d[j];return Math.sqrt(s/n)}
-function play(t,muff){const b=bufs[curSent+t];if(!b){toast('Nothing recorded for '+(t==='A'?'A':'B')+' on this sentence yet.');return}
- const c=ac();c.resume();if(srcNode)try{srcNode.stop()}catch(e){}
- const s=c.createBufferSource();s.buffer=b;let node=s;
- if(muff){const f1=c.createBiquadFilter();f1.type='lowpass';f1.frequency.value=380;f1.Q.value=0.7;const f2=c.createBiquadFilter();f2.type='lowpass';f2.frequency.value=380;const g=c.createGain();g.gain.value=2.6;s.connect(f1);f1.connect(f2);f2.connect(g);node=g}
- node.connect(c.destination);s.start();srcNode=s}
-function env(b,n){const d=b.getChannelData(0),step=Math.floor(d.length/n),out=[];for(let i=0;i<n;i++)out.push(rms(d,i*step,step));const m=Math.max(...out)||1;return out.map(v=>v/m)}
-function drawAll(){const dA=bufs[curSent+'A'],dB=bufs[curSent+'B'];const maxDur=Math.max(dA?dA.duration:0,dB?dB.duration:0)||1;
- ['A','B'].forEach(t=>{const cv=document.querySelector('#track'+t+' canvas');const r=cv.getBoundingClientRect();const W=cv.width=Math.max(300,cv.clientWidth*2),H=cv.height=Math.max(100,cv.clientHeight*2);const x=cv.getContext('2d');x.clearRect(0,0,W,H);
-  const b=bufs[curSent+t];const col=t==='A'?'#4E6A86':'#B4553F';
-  if(!b){x.fillStyle='#6E665B';x.font='26px Poppins';x.textAlign='center';x.fillText(t==='A'?'Record or load the model here':'Record your version here',W/2,H/2+8);return}
-  const usable=W*(b.duration/maxDur);const bars=Math.max(20,Math.floor(usable/9));const e=env(b,bars);const bw=usable/bars;
-  for(let i=0;i<bars;i++){const h=Math.max(3,e[i]*(H-30));x.fillStyle=col;x.globalAlpha=0.25+0.75*e[i];x.fillRect(i*bw+1.5,H-12-h,bw-3,h)}
-  x.globalAlpha=1;x.fillStyle='#6E665B';x.font='20px Poppins';x.textAlign='right';x.fillText(b.duration.toFixed(1)+' s',W-12,28)})}
-buildLab();
+
+/* ---------- link it up ---------- */
+const LT={c:'c1',s:'c2',g:'c3',y:'c4'};
+const CHAINS=[
+ {name:'Picked up her bag',t:'She picked_c up_c her bag_c and walked_s to_g a smaller hotel.',snd:'she pick-tu-per ba-gən walk-tə-wə smaller hotel'},
+ {name:'Turned out to be',t:'A man who turned_c out_s to be_g a photographer working_c at the conference.',snd:'who turn-dow-tə bee-yə fə-TOG-rə-fə wor-king-ət the conference'},
+ {name:'Checked the programme',t:'She checked the programme_c again_c and her heart stopped.',snd:'she checked the pro-gra-mə-ge-nən her heart stopped'},
+ {name:'Stop reading',t:'I had_s to stop reading_c and_c actually talk to them.',snd:'I ha-tə stop rea-ding-ə-nak-chə-lee talk-tə them'}];
+let ch=0,depth=1;
+function parse(t){return t.split(' ').map(w=>{const m=w.match(/^(.*)_([csgy])$/);return m?{w:m[1],l:m[2]}:{w,l:null}})}
+function lineHTML(tok){return tok.map((x,i)=>x.w+(i<tok.length-1?(x.l?'<span class="lk '+LT[x.l]+'"></span>':' '):'')).join('')}
+function renderChain(){const tok=parse(CHAINS[ch].t);depth=Math.max(1,Math.min(tok.length,depth));
+ const p=document.getElementById('cpick');p.innerHTML='';CHAINS.forEach((c,i)=>{const b=document.createElement('button');b.textContent=(i+1)+' · '+c.name;b.className=i===ch?'cur':'';b.onclick=()=>{ch=i;depth=1;renderChain()};p.appendChild(b)});
+ const L=document.getElementById('lines');L.innerHTML='';
+ for(let d=1;d<=depth;d++){const div=document.createElement('div');div.className='ln'+(d===depth?' last':'');div.innerHTML=lineHTML(tok.slice(tok.length-d));L.appendChild(div)}
+ while(L.children.length>7)L.removeChild(L.firstChild);
+ document.getElementById('sound').innerHTML=depth===tok.length?'Sounds like: <b>'+CHAINS[ch].snd+'</b>':(tok.length-depth)+' pieces to go';
+ document.getElementById('cAdd').disabled=depth===tok.length;document.getElementById('cBack').disabled=depth===1}
+document.getElementById('cAdd').onclick=()=>{depth++;renderChain()};document.getElementById('cBack').onclick=()=>{depth--;renderChain()};
+renderChain();
+['count','stress','links','pick'].forEach(renderQuiz);
 
 /* ---------- impression checks ---------- */
 function renderChecks(){const h=document.getElementById('checks');const v=store.get('checks',{});
@@ -381,10 +394,10 @@ function renderChecks(){const h=document.getElementById('checks');const v=store.
 renderChecks();
 
 /* ---------- results ---------- */
-function renderResults(){['count','stress','pick'].forEach(k=>{const a=store.get('ans-'+k,{});const s=QUIZ[k].items.reduce((n,x,i)=>n+(a[i]===x.a?1:0),0);document.getElementById('r-'+k).innerHTML=s+'<small>/10</small>'});
+function renderResults(){['count','stress','links','pick'].forEach(k=>{const a=store.get('ans-'+k,{});const s=QUIZ[k].items.reduce((n,x,i)=>n+(a[i]===x.a?1:0),0);document.getElementById('r-'+k).innerHTML=s+'<small>/'+QUIZ[k].items.length+'</small>'});
  const missed=[];['count','stress','pick'].forEach(k=>{const a=store.get('ans-'+k,{});QUIZ[k].items.forEach((x,i)=>{if(a[i]!==undefined&&a[i]!==x.a&&!missed.includes(x.w))missed.push(x.w)})});
  const list=missed.length?missed:['comfortable','photographer','technology','available','Wednesday','colleague','career','decided','audience','specific'];
  document.getElementById('hwWords').innerHTML='<span style="font-family:Poppins;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);display:block;margin-bottom:4px">'+(missed.length?'Your list: the words you missed today':'Your list')+'</span>'+list.join(' · ')}
 </script>
 </body>
-</html>
+</html> 
